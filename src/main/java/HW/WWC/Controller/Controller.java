@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class Controller {
     @GetMapping("/get/{login}")
-    public ResponseEntity<?> getStaticJson(@PathVariable String login) throws Exception {
+    public ResponseEntity<?> getStaticJson(@PathVariable String login) {
         SQL databaseManager = new SQL();
         User user = databaseManager.select(login);
         if (user == null) {
