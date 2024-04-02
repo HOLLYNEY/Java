@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="661b99e7-1120-404e-810c-925d0b2ce7eb" name="Changes" comment="git config --global user.email &quot;alradovv@gmail.com&quot;&#10;git config --global user.name &quot;Alex Radov&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jolokia-agent-jvm-2.0.2-javaagent.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WWC_jar/WWC.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WWC_jar/WWC.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WWC_jar/jackson-databind-2.17.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WWC_jar/lombok-1.18.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HW/WWC/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HW/WWC/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HW/WWC/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HW/WWC/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HW/WWC/SQL/SQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HW/WWC/SQL/SQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +37,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -47,37 +61,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JAR Application.WWC.jar.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.WWC [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.WWC [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.WWC.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.WwcApplication.executor&quot;: &quot;Run&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/работа/Idea/WWC2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JAR Application.WWC-0.0.1-SNAPSHOT.jar.executor": "Run",
+    "JAR Application.WWC.jar.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "Maven.WWC [clean].executor": "Run",
+    "Maven.WWC [package].executor": "Run",
+    "Maven.WWC [test].executor": "Run",
+    "Maven.WWC.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.WwcApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/User/Desktop/работа/Idea/Новая папка/дублер/WWC",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.41264367",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
-  <component name="RunManager" selected="JAR Application.WWC-0.0.1-SNAPSHOT.jar">
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.WwcApplication">
     <configuration name="WWC-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/WWC-0.0.1-SNAPSHOT.jar" />
       <method v="2" />
@@ -104,6 +126,7 @@
     <attachedChunks>
       <set>
         <option value="jdk-20.0.2-corretto-20.0.2.1-4caba194b151-5bc9ecd2" />
+        <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
       </set>
     </attachedChunks>
   </component>
@@ -132,6 +155,18 @@
       <workItem from="1710869287949" duration="754000" />
       <workItem from="1710870274389" duration="61000" />
       <workItem from="1710919944521" duration="2330000" />
+      <workItem from="1711454856234" duration="1028000" />
+      <workItem from="1711560715369" duration="139000" />
+      <workItem from="1711560935139" duration="643000" />
+      <workItem from="1711562296792" duration="833000" />
+      <workItem from="1711566230364" duration="132000" />
+      <workItem from="1711567641737" duration="1668000" />
+      <workItem from="1711995137281" duration="1816000" />
+      <workItem from="1711996986123" duration="781000" />
+      <workItem from="1711997784924" duration="77000" />
+      <workItem from="1711997871111" duration="1171000" />
+      <workItem from="1711999056290" duration="9252000" />
+      <workItem from="1712042671913" duration="13748000" />
     </task>
     <task id="LOCAL-00001" summary="git config --global user.email &quot;alradovv@gmail.com&quot;&#10;git config --global user.name &quot;Alex Radov&quot;">
       <option name="closed" value="true" />
@@ -181,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710869870010</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="git config --global user.email &quot;alradovv@gmail.com&quot;&#10;git config --global user.name &quot;Alex Radov&quot;">
+      <option name="closed" value="true" />
+      <created>1712032496592</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712032496592</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

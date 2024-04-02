@@ -1,35 +1,31 @@
 package HW.WWC.SQL;
 
+
 import HW.WWC.Model.User;
 
-
 import java.sql.*;
-
-
+//192.168.0.47:5432/postgres
 
 public class SQL {
-    public static class DatabaseManager {
         private static final String URL = "jdbc:postgresql://localhost:5432/postgres";
         private static final String USER = "postgres";
         private static final String PASSWORD = "postgres";
 
         public User select(String login) {
             User user = null;
-            Statement statement;
-            ResultSet resultSet;
-            try {
-                Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
-                statement = connection.createStatement();
+            Connection connection = null;
+            String query = "SELECT * FROM task1 JOIN task2 USING (login) WHERE login = '" + login + "'";
 
-                String select = StringTemplate.STR."SELECT * FROM task1 JOIN task2 ON task1.login = task2.login WHERE task1.login = '\{login}'";
-                //String select = "SELECT * FROM task1 JOIN task2 ON task1.login = task2.login WHERE task1.login = ?";
-                resultSet = statement.executeQuery(select);
+            try {
+                connection = DriverManager.getConnection(URL, USER, PASSWORD);
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(query);
 
                 if (resultSet.next()) {
                     user = new User(
                             resultSet.getString("login"),
                             resultSet.getString("password"),
-//                            resultSet.getString("date"),
+                            resultSet.getString("date"),
                             resultSet.getString("email")
                     );
                 }
@@ -48,7 +44,7 @@ public class SQL {
                  PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
                 preparedStatement.setString(1, user.getLogin());
                 preparedStatement.setString(2, user.getPassword());
-//                preparedStatement.setDate(3, java.sql.Date.valueOf(user.getTimestamp()));
+                preparedStatement.setDate(3, java.sql.Date.valueOf(user.getTimestamp()));
                 preparedStatement.setString(4, user.getLogin());
                 preparedStatement.setString(5, user.getEmail());
                 rowsUpdated = preparedStatement.executeUpdate();
@@ -57,5 +53,5 @@ public class SQL {
             }
             return rowsUpdated;
         }
-    }
 }
+
